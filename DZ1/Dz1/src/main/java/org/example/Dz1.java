@@ -1,5 +1,4 @@
 package org.example;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
 import java.lang.Math;
@@ -24,28 +23,26 @@ public class Dz1 {
     //3. Найти все кратные n числа в диапазоне от i до Short.MAX_VALUE сохранить в массив m1
 
     public static LinkedList<Short> sMaxValue(int i, int n){
-        int j = 0;
-        LinkedList<Short> massiv = new LinkedList<>();
+        LinkedList<Short> massive = new LinkedList<>();
         for(;i<=Short.MAX_VALUE; i++) {
             if(i%n==0) {
-                massiv.add((short)i);
+                massive.add((short)i);
             }
         }
 
-        return massiv;
+        return massive;
     }
 
     //4. Найти все некратные n числа в диапазоне от Short.MIN_VALUE до i и сохранить в массив m2
 
     public static LinkedList<Short> sMinValue(int i, int n){
-        int j = 0;
-        LinkedList<Short> massiv = new LinkedList<>();
+        LinkedList<Short> massive = new LinkedList<>();
         for(;i>=Short.MIN_VALUE; i--) {
             if(i%n==0) {
-                massiv.add((short)i);
+                massive.add((short)i);
             }
         }
 
-        return massiv;
+        return massive;
     }
 }
