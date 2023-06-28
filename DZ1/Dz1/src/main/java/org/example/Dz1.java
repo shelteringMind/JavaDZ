@@ -6,7 +6,9 @@ import java.lang.Math;
 import java.lang.Short;
 
 public class Dz1 {
+
     //1. Выбросить случайное целое число в диапазоне от 0 до 2000 и сохранить в i
+
     public static int randomOut(int maxRandom) {
         Random outNum = new Random();
         return outNum.nextInt(maxRandom);
