@@ -54,7 +54,11 @@ public class Dz2 {
         StringBuilder strQuery = new StringBuilder("select * from students where ");
         strQuery.append(key);
         strQuery.append(" = ");
-        strQuery.append(listFilter.get(key));
+        String query = listFilter.get(key);
+        if(!query.equals("null"))
+            strQuery.append(query);
+        else
+            strQuery.replace(0,strQuery.length(),"Запрос имеет null значение");
         return strQuery;
     }
 
