@@ -38,7 +38,7 @@ public class Dz1 {
     public static LinkedList<Short> sMinValue(int i, int n){
         LinkedList<Short> massive = new LinkedList<>();
         for(;i>=Short.MIN_VALUE; i--) {
-            if(i%n==0) {
+            if(i%n!=0) {
                 massive.add((short)i);
             }
         }
