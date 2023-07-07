@@ -39,10 +39,10 @@ public class QS {
     }
 
     private static void obmen(ArrayList<ArrayList> arr, int i, int j) {
-        for (int k = 0; k < arr.size(); k++) {
-            Object temp = arr.get(k).get(i);
-            arr.get(k).set(i, arr.get(k).get(j));
-            arr.get(k).set(j, temp);
+        for (ArrayList arrList : arr) {
+            Object temp = arrList.get(i);
+            arrList.set(i, arrList.get(j));
+            arrList.set(j, temp);
         }
     }
 }
